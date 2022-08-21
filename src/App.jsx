@@ -1,9 +1,10 @@
 import "./App.scss";
-import Toggle from "./components/state/Toggle";
+import Game from "./components/tictactoe/Game";
 
 function App() {
   return (
-    <Toggle />
+    <Game>
+    </Game>
   );
 }
 

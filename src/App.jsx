@@ -1,10 +1,21 @@
 import "./App.scss";
-import Game from "./components/tictactoe/Game";
+import Card from "./components/card/Card";
+import CardList from "./components/card/CardList";
+import { GlobalStyles } from "./GlobalStyles";
 
 function App() {
   return (
-    <Game>
-    </Game>
+    <>
+      <GlobalStyles></GlobalStyles>
+      <CardList>
+        <Card secondary={true}></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </CardList>
+    </>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { calculateWinner } from '../../helper/calculateWinner';
 import Cell from './Cell';
 
 const Board = (props) => {
@@ -10,6 +9,7 @@ const Board = (props) => {
                key={index}
                onClick={() => props.onClick(index)}
                value={item}
+               className={item !== null && item === 'X' ? 'x-turn' : item === 'O' ? 'o-turn' : ''}
             />
          ))}
       </div>
